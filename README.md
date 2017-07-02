@@ -1,4 +1,4 @@
-Abstract Integration Tests ()AEM bundle)
+Abstract Integration Tests (AEM bundle)
 =======
 This is an example of an external service integration with a mock implementation for testing purpose. 
 
