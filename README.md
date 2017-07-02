@@ -12,11 +12,11 @@ There are two inherited implementations:
 
 ### Mock Implementation
 
-The mock implementation [SearchServiceMockImpl](bundle/src/main/java/df/example/ext/impl/SearchServiceMockImpl.java) is tested with [SearchServiceMockIntegrationTest](bundle/src/test/java/df/example/ext/impl/SearchServiceMockIntegrationTest.java). Maven will find this test as a normal unit test and will run the test in the test phase (mvn test).
+The mock implementation [SearchServiceMockImpl](bundle/src/main/java/df/example/ext/impl/SearchServiceMockImpl.java) is tested with [SearchServiceMockIntegrationTest](bundle/src/test/java/df/example/ext/impl/SearchServiceMockIntegrationTest.java). Maven will find this test as a normal unit test and will run the test in the unit test phase (mvn test).
 
 ### Production Implementation
 
-The production implementation [SearchServiceImpl](bundle/src/main/java/df/example/ext/impl/SearchServiceImpl.java) is tested with [SearchServiceIntegrationTest](bundle/src/test/java/df/example/ext/impl/SearchServiceIntegrationTest.java). This test is marked as an implementation test and will not be executed in the normal test phase. It's getting executed in the integration test phase (mvn verify).
+The production implementation [SearchServiceImpl](bundle/src/main/java/df/example/ext/impl/SearchServiceImpl.java) is tested with [SearchServiceIntegrationTest](bundle/src/test/java/df/example/ext/impl/SearchServiceIntegrationTest.java). This test is marked as an integration test (@Category..) and will not be executed in the normal unit test phase. It's getting executed in the integration test phase (mvn verify).
 
 ### Service exposure
 
