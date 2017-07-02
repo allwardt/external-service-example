@@ -1,4 +1,4 @@
-# Abstract Integration Tests (AEM bundle)
+# Service Mocks and Abstract Integration Tests (AEM bundle)
 
 This is an example of how to integrate an external service with a mock and a production implementation. Both implementations are fully working so you could switch between both implementations during development. 
 
